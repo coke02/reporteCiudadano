@@ -69,3 +69,14 @@ function previewImage(event) {
         preview.style.display = 'none';
     }
 }
+
+function updateOctasImage() {
+    const nubosidadInput = document.getElementById('nubosidad');
+    const octasImage = document.getElementById('octasImage');
+    let value = parseInt(nubosidadInput.value, 10);
+
+    if (isNaN(value) || value < 0 || value > 7) {
+        value = 0;
+    }
+    octasImage.src = `/octas/octa${value}.PNG`;
+}
