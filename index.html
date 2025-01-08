@@ -131,9 +131,20 @@
                     </div>
                 </div>
 
-                <div class="form-group mt-3">
-                    <label for="nubosidad">Nubosidad (octas):</label>
-                    <input type="number" id="nubosidad" name="nubosidad" class="form-control" min="0" max="8" step="1">
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="nubosidad">Nubosidad (octas):</label>
+                            <input type="number" id="nubosidad" name="nubosidad" class="form-control" min="0" max="8" step="1" oninput="updateOctasImage()">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Representación de Nubosidad:</label>
+                            <br>
+                            <img id="octasImage" src="/octas/octa0.PNG" alt="Imagen de nubosidad" style="max-width: 100%; height: auto; border: 1px solid #ddd; padding: 5px;">
+                        </div>
+                    </div>
                 </div>
             </div>
 
